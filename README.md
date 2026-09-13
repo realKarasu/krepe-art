@@ -25,14 +25,23 @@ Drop files into `public/assets/` using these names (or update the `src` / CSS ur
 
 | File | Role |
 |------|------|
-| `krepe-hug.png` | Floating chibi (native transparent PNG) |
-| `favicon.png` | Browser tab icon (cropped chibi) |
-| `krepe-sleep.jpg` | About section scene |
-| `krepe-cloud-a.png` | Drawn milk cloud décor |
-| `krepe-cloud-b.png` | Drawn milk cloud décor (variant) |
-| `krepe-cloud-c.png` | Drawn milk cloud décor (variant) |
-| `chocolate.svg` | Chocolate motif |
-| `coconut.svg` | Coconut motif |
-| `coffee.svg` | Coffee motif |
+| `krepe-hug.png` | Floating chibi |
+| `favicon.png` | Tab icon |
+| `krepe-sleep.jpg` | About scene |
+| `krepe-cloud-a/b/c/d.png` | Drawn milk clouds |
+| `asset-cocoa-mug.png` | Cocoa mug décor |
+| `asset-cookie.png` | Cookie décor |
+| `asset-chocolate-bar.png` | Chocolate bar |
+| `asset-coffee-bean.png` | Coffee bean |
+| `asset-coconut-flakes.png` | Coconut flakes |
+| `asset-marshmallow.png` | Marshmallow |
+| `asset-choco-chips.png` | Chocolate chips |
+| `asset-heart.png` | Heart doodle |
+| `asset-star.png` | Star |
+| `asset-bow.png` | Ribbon bow |
+| `asset-steam.png` | Steam wisps |
+| `asset-zzz.png` | Sleepy zzz |
+| `asset-milk-drops.png` | Milk drops |
+| `asset-sleep-mask.png` | Sleep mask |
 
 Replace in place with the same filenames, or update paths in `index.html`.
