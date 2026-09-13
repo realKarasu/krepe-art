@@ -16,10 +16,14 @@ body {
   font-size: 1.02rem;
   line-height: 1.6;
   color: var(--ink);
-  background:
-    radial-gradient(ellipse 70% 55% at 50% 35%, color-mix(in srgb, var(--coconut) 85%, white), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 15% 80%, color-mix(in srgb, var(--cream) 80%, var(--coffee)), transparent 55%),
-    linear-gradient(180deg, #2a211c 0%, #5c4033 28%, var(--cream) 62%, var(--milk) 100%);
+  background: linear-gradient(
+    165deg,
+    #3a2c24 0%,
+    #6a4e3d 22%,
+    #c4b09a 48%,
+    #e8dfd0 72%,
+    #f3ebe0 100%
+  );
 }
 
 img,
