@@ -44,7 +44,16 @@ export function initPanels() {
   }
 
   buttons.forEach((btn) => {
-    btn.addEventListener('mouseenter', () => sfxHover());
+    btn.addEventListener('pointerenter', () => {
+      btn.classList.add('is-hover');
+      sfxHover();
+    });
+    btn.addEventListener('pointerleave', () => {
+      btn.classList.remove('is-hover');
+    });
+    btn.addEventListener('pointercancel', () => {
+      btn.classList.remove('is-hover');
+    });
     btn.addEventListener('click', () => {
       const id = btn.getAttribute('data-panel');
       if (id) openPanel(id);

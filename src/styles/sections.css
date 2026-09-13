@@ -197,35 +197,39 @@
   gap: 0.25rem;
   justify-items: center;
   min-width: 3.4rem;
-  padding: 0.45rem 0.25rem 0.25rem;
+  padding: 0.55rem 0.35rem 0.35rem;
   font: inherit;
-  transition: color 0.2s ease;
+  position: relative;
+  isolation: isolate;
 }
 
-.dock-btn:hover .dock-icon,
+.dock-btn.is-hover .dock-icon,
 .dock-btn.is-active .dock-icon {
-  transform: translateY(-3px);
-  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--cream) 80%, transparent));
+  transform: translateY(-2px);
+  filter:
+    drop-shadow(0 0 10px rgb(255 248 240 / 0.95))
+    drop-shadow(0 0 18px rgb(255 248 240 / 0.55));
 }
 
-.dock-btn:hover .dock-label,
+.dock-btn.is-hover .dock-label,
 .dock-btn.is-active .dock-label {
   opacity: 1;
-  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--cream) 55%, transparent));
+  text-shadow: 0 0 10px rgb(255 248 240 / 0.7);
 }
 
 .dock-icon {
   width: 2.1rem;
   height: 2.1rem;
   color: var(--coconut);
-  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--cream) 45%, transparent));
-  transition: transform 0.2s ease, filter 0.2s ease;
-  will-change: transform, filter;
+  filter: drop-shadow(0 0 6px rgb(255 248 240 / 0.35));
+  transition: transform 0.18s ease;
+  pointer-events: none;
 }
 
 .dock-icon svg {
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 .dock-label {
@@ -234,7 +238,7 @@
   text-transform: uppercase;
   font-weight: 700;
   opacity: 0.92;
-  transition: opacity 0.2s ease, filter 0.2s ease;
+  pointer-events: none;
 }
 
 .vgen-cta {
@@ -543,7 +547,7 @@
     animation: none;
   }
 
-  .dock-btn:hover .dock-icon,
+  .dock-btn.is-hover .dock-icon,
   .dock-btn.is-active .dock-icon,
   .vgen-cta:hover {
     transform: none;
