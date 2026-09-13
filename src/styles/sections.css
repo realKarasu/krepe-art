@@ -161,47 +161,47 @@
   align-items: center;
   justify-content: center;
   gap: 0.45rem;
-  padding: 0.55rem 0.85rem;
-  border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--mocha) 28%, transparent);
-  background: color-mix(in srgb, var(--foam) 86%, white);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
   color: var(--mocha);
-  backdrop-filter: blur(6px);
-  box-shadow: var(--shadow-soft);
 }
 
 .status-badge[data-status='open'] {
-  border-color: color-mix(in srgb, #5f8f4e 40%, var(--mocha));
-  background: color-mix(in srgb, var(--foam) 78%, #dce9d4);
+  border: 0;
+  background: transparent;
 }
 
 .status-badge[data-status='closed'] {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .status-badge[data-status='waitlist'] {
-  background: color-mix(in srgb, var(--cream) 70%, #f0e0c0);
+  background: transparent;
 }
 
 .status-label {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .status-mark {
-  font-size: 0.7rem;
-  opacity: 0.75;
+  font-size: 0.72rem;
+  opacity: 0.8;
   color: var(--chocolate);
 }
 
 .status-flourish {
-  font-size: 0.62rem;
+  font-size: 0.64rem;
   letter-spacing: 0.02em;
-  opacity: 0.7;
+  opacity: 0.75;
   color: var(--coffee);
   font-weight: 600;
 }
