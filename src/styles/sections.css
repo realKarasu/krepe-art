@@ -124,7 +124,8 @@
 .stage-brand {
   display: grid;
   gap: 0.55rem;
-  justify-items: start;
+  justify-items: center;
+  text-align: center;
   padding-bottom: 2rem;
 }
 
@@ -150,8 +151,8 @@
 
 .comms-board {
   display: grid;
-  justify-items: start;
-  margin-top: 0.2rem;
+  justify-items: center;
+  margin-top: 0.35rem;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -167,8 +168,8 @@
   margin: 0;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.35rem;
-  flex-wrap: wrap;
   font-family: var(--font-logo);
   font-size: clamp(1.05rem, 2.6vw, 1.45rem);
   font-weight: 400;
@@ -537,13 +538,8 @@
   }
 
   .stage-brand {
-    justify-items: center;
     order: -1;
     padding-bottom: 0;
-  }
-
-  .comms-board {
-    justify-items: center;
   }
 
   .chibi {
