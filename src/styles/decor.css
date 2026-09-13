@@ -1,0 +1,77 @@
+.decor-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.decor-item {
+  position: absolute;
+  opacity: 0.55;
+}
+
+.decor-item img {
+  width: 100%;
+  height: auto;
+}
+
+.decor-cloud {
+  width: min(42vw, 280px);
+  opacity: 0.7;
+}
+
+.decor-motif {
+  width: 42px;
+  opacity: 0.45;
+}
+
+.decor-float {
+  animation: float-y 7s ease-in-out infinite;
+}
+
+.decor-float-slow {
+  animation: float-y 11s ease-in-out infinite reverse;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .decor-float,
+  .decor-float-slow {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+}

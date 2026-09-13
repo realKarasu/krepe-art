@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Krepe — artist & VTuber" />
+    <link rel="icon" href="/assets/coffee.svg" type="image/svg+xml" />
+    <title>Krepe</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="#hero">Krepe</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about" data-i18n="nav.about"></a>
+          <a href="#comms" data-i18n="nav.comms"></a>
+          <a href="#services" data-i18n="nav.services"></a>
+          <a href="#terms" data-i18n="nav.terms"></a>
+          <a href="#faq" data-i18n="nav.faq"></a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-plane">
+          <div class="decor-layer" aria-hidden="true">
+            <div class="decor-item decor-cloud decor-float" style="top: 8%; left: 4%">
+              <img src="/assets/cloud.svg" alt="" />
+            </div>
+            <div class="decor-item decor-cloud decor-float-slow" style="top: 18%; right: 6%">
+              <img src="/assets/cloud.svg" alt="" />
+            </div>
+            <div class="decor-item decor-motif decor-float" style="top: 42%; left: 12%">
+              <img src="/assets/chocolate.svg" alt="" />
+            </div>
+            <div class="decor-item decor-motif decor-float-slow" style="top: 55%; left: 28%">
+              <img src="/assets/coconut.svg" alt="" />
+            </div>
+            <div class="decor-item decor-motif decor-float" style="top: 38%; left: 48%">
+              <img src="/assets/coffee.svg" alt="" />
+            </div>
+          </div>
+          <div class="hero-copy reveal">
+            <p class="hero-eyebrow" data-i18n="hero.eyebrow"></p>
+            <h1>Krepe</h1>
+            <p class="hero-lead" data-i18n="hero.lead"></p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#comms" data-i18n="hero.ctaComms"></a>
+              <a
+                class="btn btn-ghost"
+                href="https://vgen.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="hero.ctaVgen"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="divider-line" aria-hidden="true"></span>
+            <h2 data-i18n="about.title"></h2>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+          <p class="section-intro" data-i18n="about.kicker"></p>
+          <div class="panel center-stack">
+            <p data-i18n="about.body1"></p>
+            <p data-i18n="about.body2"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="comms" class="section">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="divider-line" aria-hidden="true"></span>
+            <h2 data-i18n="comms.title"></h2>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+          <div class="center-stack">
+            <p data-i18n="comms.label"></p>
+            <div id="comms-status" class="status-badge" data-status="open"></div>
+            <p data-i18n="comms.note"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="divider-line" aria-hidden="true"></span>
+            <h2 data-i18n="services.title"></h2>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+          <p class="section-intro" data-i18n="services.intro"></p>
+
+          <div class="service-block panel">
+            <h3 data-i18n="services.emotes.title"></h3>
+            <p data-i18n="services.emotes.desc"></p>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th data-i18n="services.col.item"></th>
+                  <th data-i18n="services.col.price"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="services.emotes.rows.0.item"></td>
+                  <td data-i18n="services.emotes.rows.0.price"></td>
+                </tr>
+                <tr>
+                  <td data-i18n="services.emotes.rows.1.item"></td>
+                  <td data-i18n="services.emotes.rows.1.price"></td>
+                </tr>
+                <tr>
+                  <td data-i18n="services.emotes.rows.2.item"></td>
+                  <td data-i18n="services.emotes.rows.2.price"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="service-block panel">
+            <h3 data-i18n="services.panels.title"></h3>
+            <p data-i18n="services.panels.desc"></p>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th data-i18n="services.col.item"></th>
+                  <th data-i18n="services.col.price"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="services.panels.rows.0.item"></td>
+                  <td data-i18n="services.panels.rows.0.price"></td>
+                </tr>
+                <tr>
+                  <td data-i18n="services.panels.rows.1.item"></td>
+                  <td data-i18n="services.panels.rows.1.price"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="service-block panel">
+            <h3 data-i18n="services.addons.title"></h3>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th data-i18n="services.col.item"></th>
+                  <th data-i18n="services.col.price"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="services.addons.rows.0.item"></td>
+                  <td data-i18n="services.addons.rows.0.price"></td>
+                </tr>
+                <tr>
+                  <td data-i18n="services.addons.rows.1.item"></td>
+                  <td data-i18n="services.addons.rows.1.price"></td>
+                </tr>
+                <tr>
+                  <td data-i18n="services.addons.rows.2.item"></td>
+                  <td data-i18n="services.addons.rows.2.price"></td>
+                </tr>
+                <tr>
+                  <td data-i18n="services.addons.rows.3.item"></td>
+                  <td data-i18n="services.addons.rows.3.price"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="service-block panel center-stack">
+            <h3 data-i18n="services.riggers.title"></h3>
+            <p data-i18n="services.riggers.desc"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="support" class="section">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="divider-line" aria-hidden="true"></span>
+            <h2 data-i18n="support.title"></h2>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+          <p class="section-intro" data-i18n="support.intro"></p>
+          <ul class="link-list">
+            <li><a href="#" data-i18n="support.links.x"></a></li>
+            <li><a href="#" data-i18n="support.links.twitch"></a></li>
+            <li><a href="#" data-i18n="support.links.throne"></a></li>
+            <li><a href="#" data-i18n="support.links.vgen"></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="divider-line" aria-hidden="true"></span>
+            <h2 data-i18n="contact.title"></h2>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+          <div class="panel center-stack">
+            <p data-i18n="contact.body"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="terms" class="section">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="divider-line" aria-hidden="true"></span>
+            <h2 data-i18n="terms.title"></h2>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+          <p class="section-intro" data-i18n="terms.updated"></p>
+          <p class="section-intro" data-i18n="terms.preamble"></p>
+
+          <div class="terms-block panel">
+            <h3 data-i18n="terms.general.title"></h3>
+            <ul>
+              <li data-i18n="terms.general.items.0"></li>
+              <li data-i18n="terms.general.items.1"></li>
+              <li data-i18n="terms.general.items.2"></li>
+              <li data-i18n="terms.general.items.3"></li>
+              <li data-i18n="terms.general.items.4"></li>
+            </ul>
+          </div>
+          <div class="terms-block panel">
+            <h3 data-i18n="terms.payments.title"></h3>
+            <ul>
+              <li data-i18n="terms.payments.items.0"></li>
+              <li data-i18n="terms.payments.items.1"></li>
+              <li data-i18n="terms.payments.items.2"></li>
+              <li data-i18n="terms.payments.items.3"></li>
+            </ul>
+          </div>
+          <div class="terms-block panel">
+            <h3 data-i18n="terms.process.title"></h3>
+            <ul>
+              <li data-i18n="terms.process.items.0"></li>
+              <li data-i18n="terms.process.items.1"></li>
+              <li data-i18n="terms.process.items.2"></li>
+              <li data-i18n="terms.process.items.3"></li>
+            </ul>
+          </div>
+          <div class="terms-block panel">
+            <h3 data-i18n="terms.deliverables.title"></h3>
+            <ul>
+              <li data-i18n="terms.deliverables.items.0"></li>
+              <li data-i18n="terms.deliverables.items.1"></li>
+              <li data-i18n="terms.deliverables.items.2"></li>
+            </ul>
+          </div>
+          <div class="terms-block panel">
+            <h3 data-i18n="terms.usage.title"></h3>
+            <ul>
+              <li data-i18n="terms.usage.items.0"></li>
+              <li data-i18n="terms.usage.items.1"></li>
+              <li data-i18n="terms.usage.items.2"></li>
+              <li data-i18n="terms.usage.items.3"></li>
+            </ul>
+          </div>
+          <div class="terms-block panel">
+            <h3 data-i18n="terms.nda.title"></h3>
+            <ul>
+              <li data-i18n="terms.nda.items.0"></li>
+              <li data-i18n="terms.nda.items.1"></li>
+            </ul>
+          </div>
+          <div class="terms-block panel">
+            <h3 data-i18n="terms.credits.title"></h3>
+            <ul>
+              <li data-i18n="terms.credits.items.0"></li>
+            </ul>
+          </div>
+          <div class="terms-block panel">
+            <h3 data-i18n="terms.violations.title"></h3>
+            <ul>
+              <li data-i18n="terms.violations.items.0"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="divider-line" aria-hidden="true"></span>
+            <h2 data-i18n="faq.title"></h2>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+          <div class="faq-list panel">
+            <article class="faq-item">
+              <h3 data-i18n="faq.items.0.q"></h3>
+              <p data-i18n="faq.items.0.a"></p>
+            </article>
+            <article class="faq-item">
+              <h3 data-i18n="faq.items.1.q"></h3>
+              <p data-i18n="faq.items.1.a"></p>
+            </article>
+            <article class="faq-item">
+              <h3 data-i18n="faq.items.2.q"></h3>
+              <p data-i18n="faq.items.2.a"></p>
+            </article>
+            <article class="faq-item">
+              <h3 data-i18n="faq.items.3.q"></h3>
+              <p data-i18n="faq.items.3.a"></p>
+            </article>
+            <article class="faq-item">
+              <h3 data-i18n="faq.items.4.q"></h3>
+              <p data-i18n="faq.items.4.a"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="credits" class="section">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="divider-line" aria-hidden="true"></span>
+            <h2 data-i18n="credits.title"></h2>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+          <div class="panel center-stack">
+            <p data-i18n="credits.body"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p data-i18n="footer.note"></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

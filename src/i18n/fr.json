@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Krepe — Artiste & VTuber"
+  },
+  "nav": {
+    "about": "À propos",
+    "comms": "Commissions",
+    "services": "Services",
+    "terms": "Conditions",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Artiste · VTuber",
+    "lead": "Un nuage de lait, un peu de chocolat, et des emotes qui réchauffent le chat.",
+    "ctaComms": "Voir les commissions",
+    "ctaVgen": "Ouvrir VGen"
+  },
+  "about": {
+    "title": "À propos",
+    "kicker": "Fais connaissance",
+    "body1": "Je m'appelle Krepe. Je dessine des petits réconforts pour le stream : emotes fondantes, panels cocooning, et une présence VTuber douce comme une mousse au café.",
+    "body2": "Artiste freelance le jour, présence live le soir. Bienvenue dans mon coin lait-chocolat-coco."
+  },
+  "comms": {
+    "title": "Commissions",
+    "label": "Statut actuel",
+    "status": "open",
+    "statuses": {
+      "open": "「 Ouvert 」",
+      "closed": "「 Fermé 」",
+      "waitlist": "「 Liste d'attente 」"
+    },
+    "note": "Les places sont limitées. Lis les conditions avant d'envoyer une demande."
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Tarifs indicatifs en USD. Pas de packs groupés pour l'instant.",
+    "col": {
+      "item": "Prestation",
+      "price": "Prix"
+    },
+    "emotes": {
+      "title": "Emotes",
+      "desc": "Expressions nettes, prêtes pour Twitch / Discord.",
+      "rows": [
+        { "item": "Emote simple (YCH / base)", "price": "18 USD" },
+        { "item": "Emote custom", "price": "28 USD" },
+        { "item": "Pack de 5 emotes", "price": "120 USD" }
+      ]
+    },
+    "panels": {
+      "title": "Panels",
+      "desc": "Bannières et panneaux de chaîne assortis.",
+      "rows": [
+        { "item": "Panel simple", "price": "35 USD" },
+        { "item": "Set de 3 panels", "price": "90 USD" }
+      ]
+    },
+    "addons": {
+      "title": "Options",
+      "rows": [
+        { "item": "Rush (+30%)", "price": "+ 30% du prix de base" },
+        { "item": "NDA niveau 1", "price": "+ 30% du prix de base" },
+        { "item": "NDA niveau 2", "price": "+ 50% du prix de base" },
+        { "item": "Séparation de calques (emote)", "price": "15 USD / emote" }
+      ]
+    },
+    "riggers": {
+      "title": "Rigging d'emotes",
+      "desc": "Je ne rig pas moi-même. Si tu veux de l'animation, préviens-moi pour la séparation de calques et je te recommanderai des partenaires."
+    }
+  },
+  "support": {
+    "title": "Soutien",
+    "intro": "Un petit cacao pour soutenir le studio est toujours apprécié.",
+    "links": {
+      "x": "X (placeholder)",
+      "twitch": "Twitch (placeholder)",
+      "throne": "Throne (placeholder)",
+      "vgen": "VGen (placeholder)"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "Une question ou un projet ? Passe par VGen ou les réseaux (liens à venir). Merci de préciser ta deadline et tes références."
+  },
+  "terms": {
+    "title": "Conditions",
+    "updated": "Dernière mise à jour : 13 septembre 2026",
+    "preamble": "En commandant, tu acceptes les conditions ci-dessous. Elles peuvent évoluer sans préavis.",
+    "general": {
+      "title": "Général",
+      "items": [
+        "Je me réserve le droit de refuser ou d'annuler une commission pour quelque raison que ce soit.",
+        "Pas de contenu sexuel explicite, mineurs, gore extrême, mecha lourd, styles copiés, ou sujets que je ne peux pas traiter avec respect.",
+        "Fournis une référence claire avec couleurs de base visibles. Moodboards seuls ne suffisent pas.",
+        "Je ne crée pas de design de personnage from scratch dans le cadre des emotes YCH.",
+        "Réponds rapidement. Sans réponse sous 3 jours, l'étape en cours est considérée validée."
+      ]
+    },
+    "payments": {
+      "title": "Paiements",
+      "items": [
+        "Les paiements sont définitifs, sauf si je ne peux pas terminer la commande (remboursement intégral).",
+        "Paiement complet d'avance, sauf liste d'attente (acompte non remboursable de 30%).",
+        "Des échéanciers sont possibles sur discussion.",
+        "Facture à régler sous 24–48 h, sinon la commande est annulée."
+      ]
+    },
+    "process": {
+      "title": "Processus & retouches",
+      "items": [
+        "Première étape : croquis. Retouches illimitées pendant le croquis.",
+        "Après le lineart, seules des ajustements mineurs de couleurs de base sont inclus.",
+        "Les retouches majeures après rendu sont facturées selon la complexité.",
+        "Délai typique : 7 jours à 6 semaines après validation du croquis, selon la file."
+      ]
+    },
+    "deliverables": {
+      "title": "Livrables",
+      "items": [
+        "Fichiers livrés via lien (Drive / VGen) après validation finale.",
+        "Télécharge sous 7 jours ; les liens temporaires peuvent expirer.",
+        "PSD inclus seulement pour modèles / emotes préparés animation, sauf accord."
+      ]
+    },
+    "usage": {
+      "title": "Droits d'usage",
+      "items": [
+        "Usage commercial streaming / promo inclus sauf mention contraire.",
+        "Pas d'édition par un tiers sans accord (hors rigging Live2D prévu).",
+        "Interdit : IA training, NFT, revente du fichier source comme le tien.",
+        "Je conserve le copyright et le droit de montrer le travail (sauf NDA)."
+      ]
+    },
+    "nda": {
+      "title": "Options NDA",
+      "items": [
+        "Niveau 1 (+30%) : pas de WIP / showcase sur les réseaux ; portfolio VGen ok.",
+        "Niveau 2 (+50%) : confidentialité complète jusqu'à ton feu vert."
+      ]
+    },
+    "credits": {
+      "title": "Crédits",
+      "items": [
+        "Merci de créditer Krepe quand c'est possible (handles à venir)."
+      ]
+    },
+    "violations": {
+      "title": "Manquements",
+      "items": [
+        "Toute violation (édition non autorisée, IA/NFT, contrefaçon) peut entraîner un blacklist permanent."
+      ]
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "Comment marche la liste d'attente ?",
+        "a": "Elle ouvre 1–2 mois avant le mois cible. Acompte de 30% pour réserver, déduit du total, à régler avant le croquis."
+      },
+      {
+        "q": "Y a-t-il des réductions en volume ?",
+        "a": "Pas de réduction bulk pour l'instant. Des offres loyauté pourront arriver plus tard."
+      },
+      {
+        "q": "Tu rig les emotes ?",
+        "a": "Non. Préviens si tu veux de l'anim : séparation de calques (+15 USD / emote) et je te pointe vers des riggers."
+      },
+      {
+        "q": "Puis-je ajouter des emotes en cours de route ?",
+        "a": "Oui, dans une limite raisonnable (idéalement ≤ 3), et seulement avant l'envoi des croquis."
+      },
+      {
+        "q": "Je peux regrouper plusieurs trucs dans une demande ?",
+        "a": "Oui, c'est même préférable : une proposition / facture pour tout le lot."
+      }
+    ]
+  },
+  "credits": {
+    "title": "Crédits",
+    "body": "Site Krepe — structure inspirée des portfolios commissions doux. Assets perso à venir. Merci d'être passé."
+  },
+  "footer": {
+    "note": "Krepe · lait, chocolat, coco & café"
+  }
+}

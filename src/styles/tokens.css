@@ -1,0 +1,17 @@
+:root {
+  --milk: #f3ebe0;
+  --foam: #faf6f0;
+  --cream: #e8dfd0;
+  --ink: #3a2f28;
+  --mocha: #5c4033;
+  --chocolate: #6b4423;
+  --coffee: #7a5c45;
+  --coconut: #fff8f0;
+  --accent: #6b4423;
+  --radius: 14px;
+  --font-display: 'Nunito', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --shadow-soft: 0 18px 40px color-mix(in srgb, var(--chocolate) 12%, transparent);
+  --header-h: 4rem;
+  --max: 68rem;
+}
