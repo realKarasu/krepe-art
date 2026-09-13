@@ -33,7 +33,8 @@ function applyStatusBadge() {
   if (!el) return;
   const status = getByPath(catalogs[currentLang], 'comms.status') || 'open';
   el.dataset.status = status;
-  el.textContent = t(`comms.statuses.${status}`);
+  const label = el.querySelector('.status-label');
+  if (label) label.textContent = t(`comms.statuses.${status}`);
 }
 
 export function applyI18n() {

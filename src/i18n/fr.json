@@ -28,9 +28,9 @@
     "label": "Statut actuel",
     "status": "open",
     "statuses": {
-      "open": "「 Ouvert 」",
-      "closed": "「 Fermé 」",
-      "waitlist": "「 Liste d'attente 」"
+      "open": "Commissions Ouvertes",
+      "closed": "Commissions Fermées",
+      "waitlist": "Liste d'attente"
     },
     "note": "Les places sont limitées. Lis les conditions avant d'envoyer une demande."
   },

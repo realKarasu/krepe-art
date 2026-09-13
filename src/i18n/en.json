@@ -28,9 +28,9 @@
     "label": "Current status",
     "status": "open",
     "statuses": {
-      "open": "「 OPEN 」",
-      "closed": "「 CLOSED 」",
-      "waitlist": "「 WAITLIST 」"
+      "open": "Commissions Open",
+      "closed": "Commissions Closed",
+      "waitlist": "Waitlist"
     },
     "note": "Slots are limited. Please read the terms before sending a request."
   },
