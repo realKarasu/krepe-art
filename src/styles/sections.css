@@ -123,7 +123,7 @@
 
 .stage-brand {
   display: grid;
-  gap: 0.85rem;
+  gap: 0.55rem;
   justify-items: start;
   padding-bottom: 2rem;
 }
@@ -138,7 +138,7 @@
 }
 
 .logo {
-  margin: 0;
+  margin: 0 0 0.75rem;
   font-family: var(--font-logo);
   font-weight: 400;
   font-size: clamp(3.6rem, 10vw, 6.8rem);
@@ -148,62 +148,103 @@
   text-shadow: 0 2px 0 color-mix(in srgb, var(--foam) 55%, transparent);
 }
 
-.hero-lead {
-  margin: 0;
-  max-width: 32ch;
-  color: var(--ink);
-  font-size: 1.08rem;
-  text-shadow: none;
+.comms-board {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  text-align: center;
+  width: min(100%, 22rem);
+  margin-top: 0.2rem;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
-.status-badge {
+.comms-title {
+  margin: 0;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-  backdrop-filter: none;
+  gap: 0.4rem;
+  font-family: var(--font-logo);
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
   color: var(--mocha);
 }
 
-.status-badge[data-status='open'] {
-  border: 0;
-  background: transparent;
+.comms-plus {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  opacity: 0.7;
 }
 
-.status-badge[data-status='closed'] {
+.comms-spark {
+  font-size: 0.85rem;
+  color: var(--chocolate);
   opacity: 0.85;
 }
 
-.status-badge[data-status='waitlist'] {
-  background: transparent;
+.comms-spark.tiny {
+  font-size: 0.55rem;
+}
+
+.comms-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  max-width: 16rem;
+}
+
+.comms-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--mocha), transparent);
+  opacity: 0.55;
+}
+
+.comms-heart {
+  color: var(--chocolate);
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.comms-current {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--coffee);
+}
+
+.comms-state {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: var(--font-logo);
+  font-size: clamp(1.05rem, 2.6vw, 1.45rem);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--mocha);
+  line-height: 1.25;
+}
+
+.status-bracket {
+  font-family: var(--font-body);
+  font-size: 1.05em;
+  opacity: 0.85;
 }
 
 .status-label {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.82rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 
-.status-mark {
-  font-size: 0.72rem;
+.comms-board[data-status='closed'] .comms-state {
   opacity: 0.8;
-  color: var(--chocolate);
-}
-
-.status-flourish {
-  font-size: 0.64rem;
-  letter-spacing: 0.02em;
-  opacity: 0.75;
-  color: var(--coffee);
-  font-weight: 600;
 }
 
 .dock {
@@ -557,8 +598,8 @@
     padding-bottom: 0;
   }
 
-  .hero-lead {
-    text-align: center;
+  .comms-board {
+    width: min(100%, 20rem);
   }
 
   .chibi {

@@ -25,6 +25,8 @@
   },
   "comms": {
     "title": "Commissions",
+    "boardTitle": "COMMS",
+    "currentLabel": "My current status:",
     "label": "Current status",
     "status": "open",
     "statuses": {
