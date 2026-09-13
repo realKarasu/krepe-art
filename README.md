@@ -25,10 +25,11 @@ Drop files into `public/assets/` using these names (or update the `src` / CSS ur
 
 | File | Role |
 |------|------|
-| `hero-placeholder.svg` | Hero character / main visual |
+| `krepe-hug.jpg` | Hero full-bleed character |
+| `krepe-sleep.jpg` | About section scene |
 | `cloud.svg` | Milk cloud décor |
 | `chocolate.svg` | Chocolate motif |
 | `coconut.svg` | Coconut motif |
 | `coffee.svg` | Coffee motif |
 
-PNG/WebP is fine: keep the same basename and change extensions in `index.html` / `sections.css` if needed.
+Replace in place with the same filenames, or update paths in `index.html`.

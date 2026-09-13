@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Krepe — artist & VTuber" />
-    <link rel="icon" href="/assets/coffee.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/krepe-hug.jpg" type="image/jpeg" />
     <title>Krepe</title>
   </head>
   <body>
@@ -28,20 +28,22 @@
     <main>
       <section id="hero">
         <div class="hero-plane">
+          <img
+            class="hero-art"
+            src="/assets/krepe-hug.jpg"
+            alt=""
+            width="1254"
+            height="1254"
+            fetchpriority="high"
+          />
           <div class="decor-layer" aria-hidden="true">
             <div class="decor-item decor-cloud decor-float" style="top: 8%; left: 4%">
               <img src="/assets/cloud.svg" alt="" />
             </div>
-            <div class="decor-item decor-cloud decor-float-slow" style="top: 18%; right: 6%">
-              <img src="/assets/cloud.svg" alt="" />
-            </div>
-            <div class="decor-item decor-motif decor-float" style="top: 42%; left: 12%">
+            <div class="decor-item decor-motif decor-float-slow" style="top: 52%; left: 10%">
               <img src="/assets/chocolate.svg" alt="" />
             </div>
-            <div class="decor-item decor-motif decor-float-slow" style="top: 55%; left: 28%">
-              <img src="/assets/coconut.svg" alt="" />
-            </div>
-            <div class="decor-item decor-motif decor-float" style="top: 38%; left: 48%">
+            <div class="decor-item decor-motif decor-float" style="top: 62%; left: 22%">
               <img src="/assets/coffee.svg" alt="" />
             </div>
           </div>
@@ -71,9 +73,21 @@
             <span class="divider-line" aria-hidden="true"></span>
           </div>
           <p class="section-intro" data-i18n="about.kicker"></p>
-          <div class="panel center-stack">
-            <p data-i18n="about.body1"></p>
-            <p data-i18n="about.body2"></p>
+          <div class="about-layout">
+            <figure class="about-art">
+              <img
+                src="/assets/krepe-sleep.jpg"
+                alt=""
+                width="1374"
+                height="1145"
+                loading="lazy"
+                data-i18n-attr="alt:about.imageAlt"
+              />
+            </figure>
+            <div class="panel center-stack">
+              <p data-i18n="about.body1"></p>
+              <p data-i18n="about.body2"></p>
+            </div>
           </div>
         </div>
       </section>
