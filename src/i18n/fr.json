@@ -3,17 +3,18 @@
     "title": "Krepe — Artiste & VTuber"
   },
   "nav": {
-    "about": "À propos",
-    "comms": "Commissions",
-    "services": "Services",
-    "terms": "Conditions",
-    "faq": "FAQ"
+    "home": "Home",
+    "about": "About",
+    "services": "Service",
+    "terms": "TOS",
+    "faq": "FAQ",
+    "credits": "Credits"
   },
   "hero": {
     "eyebrow": "Artiste · VTuber",
     "lead": "Un nuage de lait, un peu de chocolat, et des emotes qui réchauffent le chat.",
-    "ctaComms": "Voir les commissions",
-    "ctaVgen": "Ouvrir VGen"
+    "chibiAlt": "Krepe qui serre son plush nuage de lait",
+    "ctaVgen": "Checkout my VGen here!"
   },
   "about": {
     "title": "À propos",

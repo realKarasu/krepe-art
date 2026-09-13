@@ -3,17 +3,18 @@
     "title": "Krepe — Artist & VTuber"
   },
   "nav": {
+    "home": "Home",
     "about": "About",
-    "comms": "Comms",
-    "services": "Services",
-    "terms": "Terms",
-    "faq": "FAQ"
+    "services": "Service",
+    "terms": "TOS",
+    "faq": "FAQ",
+    "credits": "Credits"
   },
   "hero": {
     "eyebrow": "Artist · VTuber",
     "lead": "A milk-cloud studio for cozy emotes, soft panels, and warm live energy.",
-    "ctaComms": "View commissions",
-    "ctaVgen": "Open VGen"
+    "chibiAlt": "Krepe hugging her milk-cloud plush",
+    "ctaVgen": "Checkout my VGen here!"
   },
   "about": {
     "title": "About",

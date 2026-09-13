@@ -9,7 +9,7 @@ import './styles/sections.css';
 import './styles/decor.css';
 
 import { initI18n } from './js/i18n.js';
-import { initMotion } from './js/motion.js';
+import { initPanels } from './js/panels.js';
 
 initI18n();
-initMotion();
+initPanels();
