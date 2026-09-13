@@ -24,19 +24,28 @@
 
 .decor-cloud {
   position: absolute;
-  width: min(34vw, 240px);
-  opacity: 0.55;
+  width: min(38vw, 280px);
+  opacity: 0.72;
+  pointer-events: none;
 }
 
 .cloud-a {
-  top: 6%;
-  left: 3%;
+  top: 5%;
+  left: 2%;
 }
 
 .cloud-b {
-  top: 10%;
-  right: 4%;
-  width: min(28vw, 190px);
+  top: 8%;
+  right: 3%;
+  width: min(30vw, 220px);
+  opacity: 0.65;
+}
+
+.cloud-c {
+  bottom: 22%;
+  left: 6%;
+  width: min(26vw, 190px);
+  opacity: 0.55;
 }
 
 .decor-chip {

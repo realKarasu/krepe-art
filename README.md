@@ -28,7 +28,9 @@ Drop files into `public/assets/` using these names (or update the `src` / CSS ur
 | `krepe-hug.png` | Floating chibi (native transparent PNG) |
 | `favicon.png` | Browser tab icon (cropped chibi) |
 | `krepe-sleep.jpg` | About section scene |
-| `cloud.svg` | Milk cloud décor |
+| `krepe-cloud-a.png` | Drawn milk cloud décor |
+| `krepe-cloud-b.png` | Drawn milk cloud décor (variant) |
+| `krepe-cloud-c.png` | Drawn milk cloud décor (variant) |
 | `chocolate.svg` | Chocolate motif |
 | `coconut.svg` | Coconut motif |
 | `coffee.svg` | Coffee motif |
