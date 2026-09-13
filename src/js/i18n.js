@@ -71,7 +71,7 @@ export function applyI18n() {
 }
 
 function fadeTargets() {
-  return document.querySelectorAll('[data-i18n], [data-i18n-html], #comms-status .status-label, #comms-status .comms-current, #comms-status .comms-title');
+  return document.querySelectorAll('[data-i18n], [data-i18n-html], #comms-status .status-label');
 }
 
 export function setLang(lang, { animate = true } = {}) {
