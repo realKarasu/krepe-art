@@ -179,6 +179,10 @@
   letter-spacing: 0.03em;
   color: var(--mocha);
   line-height: 1.25;
+  text-shadow:
+    0 0 8px color-mix(in srgb, var(--foam) 80%, transparent),
+    0 0 16px color-mix(in srgb, var(--cream) 65%, transparent),
+    0 0 28px color-mix(in srgb, var(--chocolate) 28%, transparent);
 }
 
 .status-bracket {
@@ -189,6 +193,10 @@
 
 .status-label {
   white-space: nowrap;
+  text-shadow:
+    0 0 10px color-mix(in srgb, var(--foam) 90%, transparent),
+    0 0 20px color-mix(in srgb, var(--cream) 70%, transparent),
+    0 0 32px color-mix(in srgb, var(--mocha) 25%, transparent);
 }
 
 .comms-board[data-status='closed'] .comms-state {
