@@ -25,7 +25,7 @@ Drop files into `public/assets/` using these names (or update the `src` / CSS ur
 
 | File | Role |
 |------|------|
-| `krepe-hug.jpg` | Hero full-bleed character |
+| `krepe-hug.png` | Floating chibi (transparent bg) |
 | `krepe-sleep.jpg` | About section scene |
 | `cloud.svg` | Milk cloud décor |
 | `chocolate.svg` | Chocolate motif |

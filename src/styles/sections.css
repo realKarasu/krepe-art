@@ -92,8 +92,8 @@
   width: min(78%, 520px);
   max-height: min(78dvh, 640px);
   object-fit: contain;
-  filter: drop-shadow(0 28px 40px color-mix(in srgb, #000 45%, transparent));
-  border-radius: 2rem;
+  filter: drop-shadow(0 22px 36px color-mix(in srgb, #000 28%, transparent));
+  background: transparent;
 }
 
 .stage-brand {
