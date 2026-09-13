@@ -1,10 +1,12 @@
 import fr from '../i18n/fr.json';
 import en from '../i18n/en.json';
+import { sfxLang } from './sfx.js';
 
 const catalogs = { fr, en };
 const STORAGE_KEY = 'krepe-lang';
 
 let currentLang = 'fr';
+let fading = false;
 
 function getByPath(obj, path) {
   return path.split('.').reduce((acc, key) => {
@@ -67,11 +69,40 @@ export function applyI18n() {
   document.title = t('meta.title');
 }
 
-export function setLang(lang) {
-  if (!catalogs[lang]) return;
-  currentLang = lang;
-  localStorage.setItem(STORAGE_KEY, lang);
-  applyI18n();
+function fadeTargets() {
+  return document.querySelectorAll('[data-i18n], [data-i18n-html], #comms-status');
+}
+
+export function setLang(lang, { animate = true } = {}) {
+  if (!catalogs[lang] || lang === currentLang || fading) return;
+
+  const run = () => {
+    currentLang = lang;
+    localStorage.setItem(STORAGE_KEY, lang);
+    applyI18n();
+  };
+
+  if (!animate) {
+    run();
+    return;
+  }
+
+  fading = true;
+  sfxLang();
+  const nodes = fadeTargets();
+  nodes.forEach((node) => node.classList.add('i18n-fade-out'));
+
+  window.setTimeout(() => {
+    run();
+    nodes.forEach((node) => {
+      node.classList.remove('i18n-fade-out');
+      node.classList.add('i18n-fade-in');
+    });
+    window.setTimeout(() => {
+      nodes.forEach((node) => node.classList.remove('i18n-fade-in'));
+      fading = false;
+    }, 280);
+  }, 180);
 }
 
 export function initI18n() {

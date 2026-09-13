@@ -77,3 +77,34 @@ p {
   color: var(--mocha);
   box-shadow: var(--shadow-soft);
 }
+
+.i18n-fade-out {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.i18n-fade-in {
+  animation: i18n-in 0.28s ease;
+}
+
+@keyframes i18n-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .i18n-fade-out,
+  .i18n-fade-in {
+    transition: none;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

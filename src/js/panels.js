@@ -1,3 +1,5 @@
+import { sfxClose, sfxHover, sfxTap } from './sfx.js';
+
 export function initPanels() {
   const layer = document.getElementById('panel-layer');
   const buttons = document.querySelectorAll('.dock-btn[data-panel]');
@@ -10,14 +12,16 @@ export function initPanels() {
     });
   }
 
-  function closePanels() {
+  function closePanels({ playSound = true } = {}) {
     if (!layer) return;
+    const wasOpen = !layer.hidden;
     layer.hidden = true;
     cards.forEach((card) => {
       card.hidden = true;
     });
     setActive('home');
     document.body.style.overflow = 'hidden';
+    if (playSound && wasOpen) sfxClose();
   }
 
   function openPanel(id) {
@@ -36,9 +40,11 @@ export function initPanels() {
     layer.hidden = false;
     card.scrollTop = 0;
     setActive(id);
+    sfxTap();
   }
 
   buttons.forEach((btn) => {
+    btn.addEventListener('mouseenter', () => sfxHover());
     btn.addEventListener('click', () => {
       const id = btn.getAttribute('data-panel');
       if (id) openPanel(id);
@@ -46,12 +52,12 @@ export function initPanels() {
   });
 
   closers.forEach((el) => {
-    el.addEventListener('click', closePanels);
+    el.addEventListener('click', () => closePanels());
   });
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closePanels();
   });
 
-  closePanels();
+  closePanels({ playSound: false });
 }
