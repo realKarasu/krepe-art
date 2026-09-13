@@ -13,16 +13,16 @@ body {
 
 body {
   font-family: var(--font-body);
-  font-size: 1.02rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: var(--ink);
   background: linear-gradient(
-    165deg,
-    #3a2c24 0%,
-    #6a4e3d 22%,
-    #c4b09a 48%,
-    #e8dfd0 72%,
-    #f3ebe0 100%
+    160deg,
+    #6d5948 0%,
+    #8f7663 26%,
+    #c9b8a4 55%,
+    #ddd0bf 78%,
+    #e8dfd2 100%
   );
 }
 
@@ -38,15 +38,20 @@ a {
   text-underline-offset: 0.2em;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
 h1,
 h2,
-h3,
-.logo {
+h3 {
   font-family: var(--font-display);
   font-weight: 700;
   color: var(--mocha);
   letter-spacing: -0.02em;
-  line-height: 1.12;
+  line-height: 1.15;
 }
 
 p {
@@ -56,10 +61,10 @@ p {
 .lang-switch {
   display: inline-flex;
   gap: 0.2rem;
-  padding: 0.2rem;
+  padding: 0.25rem;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--foam) 80%, transparent);
-  border: 1px solid color-mix(in srgb, var(--chocolate) 18%, transparent);
+  background: color-mix(in srgb, var(--foam) 88%, transparent);
+  border: 1px solid color-mix(in srgb, var(--chocolate) 22%, transparent);
   backdrop-filter: blur(8px);
 }
 
@@ -67,18 +72,20 @@ p {
   appearance: none;
   border: 0;
   background: transparent;
-  color: var(--coffee);
+  color: var(--mocha);
   font: inherit;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  padding: 0.35rem 0.65rem;
+  min-width: 2.4rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
   border-radius: 999px;
   cursor: pointer;
 }
 
 .lang-switch button[aria-pressed='true'] {
-  background: var(--foam);
-  color: var(--mocha);
+  background: var(--mocha);
+  color: var(--foam);
   box-shadow: var(--shadow-soft);
 }
 

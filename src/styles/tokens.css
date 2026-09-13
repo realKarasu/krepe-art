@@ -1,17 +1,27 @@
 :root {
-  --milk: #f3ebe0;
-  --foam: #faf6f0;
-  --cream: #e8dfd0;
-  --ink: #3a2f28;
-  --mocha: #5c4033;
-  --chocolate: #6b4423;
-  --coffee: #7a5c45;
-  --coconut: #fff8f0;
-  --accent: #6b4423;
+  --milk: #ebe4d8;
+  --foam: #f4efe7;
+  --cream: #e0d5c6;
+  --ink: #2f261f;
+  --mocha: #4a372c;
+  --chocolate: #5c4030;
+  --coffee: #6b5344;
+  --coconut: #f3ece3;
+  --accent: #5c4030;
+  --focus: #8b5a2b;
   --radius: 14px;
+  --font-logo: 'Boldodemo', 'Nunito', system-ui, sans-serif;
   --font-display: 'Nunito', system-ui, sans-serif;
   --font-body: 'Source Sans 3', system-ui, sans-serif;
-  --shadow-soft: 0 18px 40px color-mix(in srgb, var(--chocolate) 12%, transparent);
+  --shadow-soft: 0 14px 32px color-mix(in srgb, var(--chocolate) 14%, transparent);
   --header-h: 4rem;
   --max: 68rem;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --ink: #1c1511;
+    --mocha: #3a2a20;
+    --coffee: #4d3a2e;
+  }
 }

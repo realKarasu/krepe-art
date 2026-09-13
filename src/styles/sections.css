@@ -11,10 +11,11 @@
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background:
-    radial-gradient(120% 90% at 50% 40%, color-mix(in srgb, var(--foam) 35%, transparent), transparent 70%),
-    radial-gradient(80% 60% at 20% 85%, color-mix(in srgb, var(--cream) 25%, transparent), transparent 65%);
-  opacity: 0.9;
+  background: radial-gradient(
+    140% 100% at 50% 45%,
+    color-mix(in srgb, var(--foam) 28%, transparent),
+    transparent 72%
+  );
 }
 
 .stage-decor {
@@ -27,7 +28,7 @@
 .decor-cloud {
   position: absolute;
   width: min(34vw, 240px);
-  opacity: 0.5;
+  opacity: 0.38;
   pointer-events: none;
 }
 
@@ -129,47 +130,50 @@
 
 .hero-eyebrow {
   margin: 0;
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--coconut) 70%, var(--cream));
+  color: var(--mocha);
   font-weight: 700;
-  text-shadow: 0 1px 8px color-mix(in srgb, #000 35%, transparent);
 }
 
 .logo {
   margin: 0;
-  font-size: clamp(3.4rem, 9vw, 6.2rem);
-  color: var(--coconut);
-  text-shadow:
-    0 0 18px color-mix(in srgb, var(--cream) 55%, transparent),
-    0 8px 28px color-mix(in srgb, #000 35%, transparent);
+  font-family: var(--font-logo);
+  font-weight: 400;
+  font-size: clamp(3.6rem, 10vw, 6.8rem);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  color: var(--mocha);
+  text-shadow: 0 2px 0 color-mix(in srgb, var(--foam) 55%, transparent);
 }
 
 .hero-lead {
   margin: 0;
-  max-width: 28ch;
-  color: color-mix(in srgb, var(--foam) 88%, var(--cream));
-  text-shadow: 0 2px 12px color-mix(in srgb, #000 40%, transparent);
+  max-width: 32ch;
+  color: var(--ink);
+  font-size: 1.08rem;
+  text-shadow: none;
 }
 
 .status-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.55rem 1.15rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 12px;
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: 0.05em;
-  border: 1px solid color-mix(in srgb, var(--coconut) 45%, transparent);
-  background: color-mix(in srgb, var(--mocha) 72%, transparent);
-  color: var(--coconut);
+  border: 1px solid color-mix(in srgb, var(--mocha) 35%, transparent);
+  background: color-mix(in srgb, var(--foam) 82%, white);
+  color: var(--mocha);
   backdrop-filter: blur(6px);
 }
 
 .status-badge[data-status='open'] {
-  border-color: color-mix(in srgb, #c8e6b8 50%, var(--coconut));
+  border-color: color-mix(in srgb, #5f8f4e 45%, var(--mocha));
+  background: color-mix(in srgb, var(--foam) 75%, #dce9d4);
 }
 
 .dock {
@@ -182,8 +186,8 @@
   gap: clamp(0.55rem, 2vw, 1.35rem);
   padding: 0.55rem 0.85rem;
   border-radius: 1.25rem;
-  background: color-mix(in srgb, var(--mocha) 28%, transparent);
-  border: 1px solid color-mix(in srgb, var(--coconut) 28%, transparent);
+  background: color-mix(in srgb, var(--foam) 78%, transparent);
+  border: 1px solid color-mix(in srgb, var(--mocha) 22%, transparent);
   backdrop-filter: blur(10px);
 }
 
@@ -191,12 +195,13 @@
   appearance: none;
   border: 0;
   background: transparent;
-  color: var(--coconut);
+  color: var(--mocha);
   cursor: pointer;
   display: grid;
   gap: 0.25rem;
   justify-items: center;
   min-width: 3.4rem;
+  min-height: 3.2rem;
   padding: 0.55rem 0.35rem 0.35rem;
   font: inherit;
   position: relative;
@@ -207,21 +212,22 @@
 .dock-btn.is-active .dock-icon {
   transform: translateY(-2px);
   filter:
-    drop-shadow(0 0 10px rgb(255 248 240 / 0.95))
-    drop-shadow(0 0 18px rgb(255 248 240 / 0.55));
+    drop-shadow(0 0 8px rgb(92 64 48 / 0.35))
+    drop-shadow(0 0 14px rgb(255 248 240 / 0.65));
 }
 
 .dock-btn.is-hover .dock-label,
 .dock-btn.is-active .dock-label {
   opacity: 1;
-  text-shadow: 0 0 10px rgb(255 248 240 / 0.7);
+  text-shadow: none;
+  color: var(--ink);
 }
 
 .dock-icon {
   width: 2.1rem;
   height: 2.1rem;
-  color: var(--coconut);
-  filter: drop-shadow(0 0 6px rgb(255 248 240 / 0.35));
+  color: var(--mocha);
+  filter: drop-shadow(0 1px 2px rgb(47 38 31 / 0.18));
   transition: transform 0.18s ease;
   pointer-events: none;
 }
@@ -249,25 +255,31 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.7rem 1rem;
+  padding: 0.75rem 1.1rem;
   border-radius: 12px;
   text-decoration: none;
-  color: var(--coconut);
+  color: var(--foam);
   font-family: var(--font-display);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  background: color-mix(in srgb, var(--mocha) 78%, #1a120f);
-  border: 1px solid color-mix(in srgb, var(--coconut) 55%, transparent);
-  box-shadow: 0 0 16px color-mix(in srgb, var(--cream) 25%, transparent);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--mocha);
+  border: 1px solid color-mix(in srgb, var(--ink) 25%, transparent);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .vgen-cta:hover {
   transform: translateY(-2px);
-  color: var(--coconut);
-  box-shadow: 0 0 22px color-mix(in srgb, var(--cream) 40%, transparent);
+  color: var(--foam);
+  background: var(--chocolate);
+  box-shadow: var(--shadow-soft);
+}
+
+.vgen-cta:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
 }
 
 .vgen-chip {
@@ -329,14 +341,19 @@
   z-index: 2;
   appearance: none;
   border: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 999px;
   background: var(--cream);
   color: var(--mocha);
   font-size: 1.25rem;
   line-height: 1;
   cursor: pointer;
+}
+
+.panel-close:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 .section-head {

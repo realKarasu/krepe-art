@@ -3,6 +3,7 @@ import '@fontsource/nunito/700.css';
 import '@fontsource/source-sans-3/400.css';
 import '@fontsource/source-sans-3/600.css';
 
+import './styles/fonts.css';
 import './styles/tokens.css';
 import './styles/base.css';
 import './styles/sections.css';
