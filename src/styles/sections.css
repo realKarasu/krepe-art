@@ -150,6 +150,14 @@
   line-height: 0.95;
   color: var(--mocha);
   text-shadow: 0 2px 0 color-mix(in srgb, var(--foam) 55%, transparent);
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.28s ease;
+  cursor: default;
+}
+
+.logo:hover {
+  transform: scale(1.06);
 }
 
 .comms-board {
@@ -592,6 +600,11 @@
     animation: none;
   }
 
+  .logo {
+    transition: none;
+  }
+
+  .logo:hover,
   .dock-btn.is-hover .dock-icon,
   .dock-btn.is-active .dock-icon,
   .vgen-cta:hover {
