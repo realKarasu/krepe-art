@@ -173,15 +173,21 @@
   gap: 0.25rem;
   justify-items: center;
   min-width: 3.4rem;
-  padding: 0.25rem;
+  padding: 0.45rem 0.25rem 0.25rem;
   font: inherit;
-  transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+  transition: color 0.2s ease;
 }
 
-.dock-btn:hover,
-.dock-btn.is-active {
+.dock-btn:hover .dock-icon,
+.dock-btn.is-active .dock-icon {
   transform: translateY(-3px);
-  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--cream) 65%, transparent));
+  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--cream) 80%, transparent));
+}
+
+.dock-btn:hover .dock-label,
+.dock-btn.is-active .dock-label {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--cream) 55%, transparent));
 }
 
 .dock-icon {
@@ -189,6 +195,8 @@
   height: 2.1rem;
   color: var(--coconut);
   filter: drop-shadow(0 0 8px color-mix(in srgb, var(--cream) 45%, transparent));
+  transition: transform 0.2s ease, filter 0.2s ease;
+  will-change: transform, filter;
 }
 
 .dock-icon svg {
@@ -202,6 +210,7 @@
   text-transform: uppercase;
   font-weight: 700;
   opacity: 0.92;
+  transition: opacity 0.2s ease, filter 0.2s ease;
 }
 
 .vgen-cta {
@@ -510,8 +519,8 @@
     animation: none;
   }
 
-  .dock-btn:hover,
-  .dock-btn.is-active,
+  .dock-btn:hover .dock-icon,
+  .dock-btn.is-active .dock-icon,
   .vgen-cta:hover {
     transform: none;
   }
